@@ -14,7 +14,7 @@ Scanner sc=new Scanner(System.in);
   }
   for(int i=0;i<n;i++)
   {
-    if(s.indexOf(a[i])==s.lastIndexOf(a[i]))
+    if(s.indexOf(a[i])!=s.lastIndexOf(a[i]))
       {
       System.out.println(a[i]);
       break;
