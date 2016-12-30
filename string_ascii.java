@@ -15,7 +15,7 @@ public class string_ascii
 			sum=sum+((int)(s.charAt(i)-(int)(s.charAt(i-1))));
 		}
 
-		sum=sum-(int)(s.charAt(0));
+		sum=(int)(s.charAt(0))-sum;
 		System.out.println((char)sum);
 	}
 
