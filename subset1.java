@@ -1,32 +1,32 @@
-public class subset
+public class subset_1
 {
 
 	public static void main(String[] args)
 	{
 		
 		
-		int[] a1=new int[]{5,1,4,3,4};
-		int[] a2=new int[]{5,2,1,4,9,3};
+		int[] a11=new int[]{5,1,4,3,4};
+		int[] a22=new int[]{5,2,1,4,9,3};
 		
 		
-		int x=0;
+		int x1=0;
 		
-		for(int i=0;i<a1.length;i++)
+		for(int i=0;i<a11.length;i++)
 		{
 			int n=0;
-			for(int j=0;j<a2.length;j++)
+			for(int j=0;j<a22.length;j++)
 			{
-				if(a1[i]==a2[j])
+				if(a11[i]==a22[j])
 				{
-					a2[j]=0;
+					a22[j]=0;
 					n=1;
 				}
 			}
 			if(n==0)
-				x=1;
+				x1=1;
 		}
 		
-		if(x==0)
+		if(x1==0)
 			System.out.println("It is a subset");
 		else
 			System.out.println("It is not a subset");
